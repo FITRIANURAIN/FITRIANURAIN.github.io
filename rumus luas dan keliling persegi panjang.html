@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>Luas dan Keliling Persegi Panjang</title>
+<style>
+                input.btn
+                                {color: white;
+                                background: gold;
+                                border: 1px outset gold;
+                                font-family: "calibri", Times, serif;
+                                font-size: 14px;
+                                font-weight: bold;
+                                width : auto;}
+                </style>
+</head>
+<body background="images/11.jpg"
+<body>
+<center><br></br><br></br><br></br>
+<b><font color="orange" size="5">
+<p>Luas dan Keliling Persegi Panjang</p>
+<form id="Formulir" name="formulir" method="post" action="">
+                <table width="500" border="0">
+                <tr>
+                <td width="178"><b><font color="gold" size="5">Masukan panjang</td>
+                <td><input name="panjang" type="text" id="panjang"></td>
+                </tr>
+                <tr>
+                <td width="178"><b><font color="gold" size="5">Masukan lebar</td>
+                <td><input name="lebar" type="text" id="lebar"></td>
+                </tr>
+                <tr>
+                <td><b><font color="yellow" size="5">Hasil Penghitungan Luas</td>
+                <td><input name="luas" type="text" id="luas"></td>
+                </tr>
+                <tr>
+                <td><b><font color="yellow" size="5">Hasil Penghitungan Keliling</td>
+                <td><input name="keliling" type="text" id="keliling"></td>
+                </tr>
+</table>
+<p>
+<input name="cari" type="button" id="cari" value="hitung" class="btn"
+onclick="cariluas()"/>
+</p>
+</form>
+<p>&nbsp;</p>
+<script laguage="javascript">
+function cariluas()
+{
+panjang=formulir.panjang.value;
+lebar=formulir.lebar.value;
+formulir.keliling.value=2*panjang+2*lebar;
+formulir.luas.value=panjang*lebar;
+}
+</script></body></html>

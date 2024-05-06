@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+
+<body>
+
+<h1>FORMULIR PENDAFTARAN PASIEN RUMAH SAKIT ANAK BUNDA</h1>
+<form id="FORMINPUT">
+         <label>Nama Lengkap:</label>
+		 <input type="text" id="Nama">
+		 <br>
+         <label>Usia:</label>
+		 <input type="text" id="Usia">
+		 <br>
+		 <label>Poli:</label>
+		 <input type="text" id="Poli">
+		 <br>
+		 <label>Tanggal Periksa:</label>
+		 <input type="text" id="Tanggal Periksa">
+		 <br>
+         <button onclick ="tampilkanhasil()">Tampilkan</button>
+</form>
+<script>
+function tampilkanhasil() {
+        var Nama = document.getElementById("Nama").value;
+        var Usia = document.getElementById("Usia").value;
+		var Poli = document.getElementById("Poli").value;
+		var Tanggal Periksa = document.getElementById("Tanggal Periksa").value;
+		
+		document.write("<h1>BIODATA</h1>");
+		document.write("<p>Nama     : "+Nama+"</p>);
+		document.write("<p>Usia    : "+Usia+"</p>);
+		document.write("<p>Poli    : "+Poli+"</p>);
+		
+</script>
+</body>
+</html>

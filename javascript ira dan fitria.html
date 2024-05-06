@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BIODATA</title>
+</head>
+<body>
+
+<h1>BIODATA</h1>
+<form id="formInput">
+
+         <label>Masukkan Nama:</label>
+		 <input type="text" id="Nama">
+		 <br>
+         <label>Masukkan Kelas:</label>
+		 <input type="text" id="Kelas">
+		 <br>
+		 <label>Masukan Tempat Lahir:</label>
+		 <input type="text" id="tempatLahir">
+		 <br>
+         <label>Masukan Tanggal Lahir:</label>
+		 <input type="date" id="tanggalLahir">
+		 <br>
+		 <button onclick ="tampilkanHasil()">Save</button>
+</form>
+<script>
+function tampilkanHasil() {
+          var nama = document.getElemenById("nama").value;
+		  var kelas = document.getElementById("kelas").value;
+		  var tempatLahir = document.getElemantById("tempatLahir"). value;
+		  var tanggalLahir = document.getElemantById("tanggalLahir"). value;
+		  var date = new Date(tanggalLahir);
+		  var options = { day: 'numeric', month: 'long', year: 'numeric' );
+		  var tanggalString = date.toLocaleDateString ('id-ID', options);
+		  
+		  document.write("<h1>BIODATA</h1>");
+		  document.write("<p>Nama : "+nama+"</p>");
+		  document.write("<p>Kelas : "+kelas+"</p>);
+		  document.write("<p>Tempat, TanggalLahir : "+tempatLahir+", "+tanggalString+"</p>");

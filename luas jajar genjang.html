@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>Luas Jajar Genjang</title>
+<style>
+                input.btn
+                                {color: black;
+                                background: white;
+                                border: 1px outset white;
+                                font-family: "calibri", Times, serif;
+                                font-size: 14px;
+                                font-weight: bold;
+                                width : auto;}
+                </style>
+</head>
+<body background="images/14.jpg"
+<body>
+<center><br></br><br></br><br></br>
+<b><font color="green" size="5">
+<p>Luas Jajar Genjang</p>
+<form id="Formulir" name="formulir" method="post" action="">
+                <table width="500" border="0">
+                <tr>
+                <td width="178"><b><font color="black" size="5">Masukan alas</td>
+                <td><input name="alas" type="text" id="alas"></td>
+                </tr>
+                <tr>
+                <td width="178"><b><font color="black" size="5">Masukan tinggi</td>
+                <td><input name="tinggi" type="text" id="tinggi"></td>
+                </tr>
+                <tr>
+                <td><b><font color="black" size="5">Hasil Penghitungan Luas</td>
+                <td><input name="luas" type="text" id="luas"></td>
+                </tr>
+</table>
+<p>
+<input name="cari" type="button" id="cari" value="hitung" class="btn"
+onclick="cariluas()"/>
+</p>
+</form>
+<p>&nbsp;</p>
+<script laguage="javascript">
+function cariluas()
+{
+alas=formulir.alas.value;
+tinggi=formulir.tinggi.value;
+formulir.luas.value=alas*tinggi;
+}
+</script></body></html>
