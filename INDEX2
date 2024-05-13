@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viemport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css" />
+	<title>LOGIN</title>	
+</head>
+<body id=top">
+<div style="background-image:url('image/wallpaper.jpg');">
+
+<div class="wrapper rowl">
+<nav class="wrapper">
+<div class="brand">
+<div class="firstname">fitria ira</div>
+</div>
+</div>
+</div>
+
+	<h1>Login</h1>
+	<input id="username" placeholder="input username" type="text">
+		<input id="password" placeholder="input password" type="password">
+		<button onclick="login() ">Login<button>
+		<p id="gagal"></p>
+		
+</body>
+<script>
+function login()      {
+var username = document.getElementById("username").value
+var password = document.getElementById("password").value
+if(username == "FITRIA", password == "IRAQISMA")  {
+window.location.href="Home.html";
+alert("selamat berhasil masuk!");
+}else{
+        var gagal = document.getElementById('gagal').innerHTML = 'Username/Password salah, silahkan coba lago!'
+    }
+}
