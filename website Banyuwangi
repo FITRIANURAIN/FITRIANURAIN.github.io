@@ -8,7 +8,7 @@
       <h1>Fakta Unik Banyuwangi</h1>
       <h2>The Sunrise Of Java</h2>
       <p>Tari adat seblang Bakungan hingga makanan khas.</p>
-      <img src="tari-seblang-bakungan-banyuwangi.png" alt="PORTOFOLIO" />
+      <img src="TariSeblang" class="w3-round" alt="PORTOFOLIO">
       <p>Paragraph two with a <a href="https://dicoding.com">klik disini</a></p>
     </main>
   </body>
